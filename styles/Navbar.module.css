@@ -1,0 +1,168 @@
+.header {
+    background-color: red;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100vw;
+    background-color: black;
+    z-index: 100000;
+}
+
+.logo {
+    position: absolute;
+    width: 100px;
+    top: 15px;
+    left: 10px;
+    z-index: 100;
+}
+
+.menu {
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    height: 35px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 3px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000000000000000;
+}
+
+.span {
+    position: relative;
+    height: 2px;
+    width: 30px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.nav {
+    position: fixed;
+    top: 75px;
+    right: -270px;
+    width: 90%;
+    min-width: 200px;
+    max-width: 250px;
+    font-weight: 100;
+    bottom: 0;
+    padding: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: right .1s;
+    background-color: black;
+    color: white;
+    border-radius: 10px 0px 0px 0;
+    z-index: 1000000000000000;
+}
+
+.visible {
+    right: 0;
+    transition: right .2s;
+}
+
+.link {
+    margin: 5px 10px 0px 0px;
+    text-decoration: none;
+    color: #e3e6e8;
+    padding-right: 3px;
+    transition-duration: .3s;
+}
+
+.link:hover {
+    color: #4393BE;
+    border-left: 1px solid red;
+    padding-left: 5px;
+}
+
+.active {
+    color: #4393BE;
+    border-left: 1px solid red;
+    padding-left: 5px;
+}
+
+.button {
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 4px 1px;
+    background-color: white;
+    width: 100px;
+    border: 2px solid #d6d6d6;
+    border-radius: 5px;
+}
+
+
+/* @media (orientation: landscape) and (max-height: 360px) {
+    .navbar {
+        position: absolute;
+    }
+
+    .nav {
+        position: absolute;
+        background-image: linear-gradient(#003450, #4393BE);
+        border-radius: 0 30px 0 0;
+        z-index: 100;
+    }
+} */
+
+@media (min-width: 1024px) {
+
+    .nav {
+        position: absolute;
+        top: 22px;
+        right: 10px;
+        bottom: auto;
+        min-width: 525px;
+        max-width: auto;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        transition: right .1s;
+        color: white;
+        border-radius: 0px 0px 0px 0;
+        z-index: 1000000000000000;
+    }
+    .menu {
+        display: none;
+    }
+
+    /* .menu:hover {
+        animation: rotar 1.5s alternate;
+    } */
+
+    /* @keyframes rotar {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        20% {
+            transform: rotate(10deg);
+        }
+
+        40% {
+            transform: rotate(-15deg);
+        }
+
+        60% {
+            transform: rotate(15deg);
+        }
+
+        80% {
+            transform: rotate(-10deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    } */
+}
