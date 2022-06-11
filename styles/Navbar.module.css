@@ -1,4 +1,5 @@
 .header {
+    min-width: 360px;
     background-color: red;
 }
 
@@ -7,6 +8,7 @@
     top: 0;
     height: 70px;
     width: 100vw;
+    min-width: 360px;
     background-color: black;
     z-index: 100000;
 }
@@ -25,7 +27,7 @@
     top: 18px;
     right: 10px;
     height: 35px;
-    padding: 5px;
+    padding: 10px 5px;
     border: 1px solid white;
     border-radius: 3px;
 
@@ -38,7 +40,7 @@
 
 .span {
     position: relative;
-    height: 2px;
+    height: 1px;
     width: 30px;
     border-radius: 4px;
     background-color: white;
@@ -58,7 +60,7 @@
     flex-direction: column;
     align-items: flex-start;
     transition: right .1s;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
     border-radius: 10px 0px 0px 0;
     z-index: 1000000000000000;
@@ -117,7 +119,7 @@
 @media (min-width: 1024px) {
 
     .nav {
-        position: absolute;
+        position: fixed;
         top: 22px;
         right: 10px;
         bottom: auto;

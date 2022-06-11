@@ -20,23 +20,23 @@ export default function Navbar () {
         </div>   
     </div>
     <nav className={`${style.nav} ${menu === true ? style.visible : ''}`}>
-      <Link href="/Home">
-        <a className={`${style.link} ${pathname == "/Home" ? style.active : ''}`}>Inicio</a>
+      <Link href="#inicio">
+        <a className={`${style.link} ${pathname == "#inicio" ? style.active : ''}`}>Inicio</a>
       </Link>
-      <Link href="/Config">
-        <a className={`${style.link} ${pathname == "/Config"? style.active : ''}`}>Productos</a>
+      <Link href="#productos">
+        <a className={`${style.link} ${pathname == "#productos"? style.active : ''}`}>Productos</a>
       </Link>
-      <Link href="/About">
-        <a className={`${style.link} ${pathname == "/About"? style.active : ''}`}>Servicios</a>
+      <Link href="#servicios">
+        <a className={`${style.link} ${pathname == "#servicios"? style.active : ''}`}>Servicios</a>
       </Link> 
-      <Link href="/Home">
-        <a className={`${style.link} ${pathname == "/Home" ? style.active : ''}`}>Cursos</a>
+      <Link href="#cursos">
+        <a className={`${style.link} ${pathname == "#cursos" ? style.active : ''}`}>Cursos</a>
       </Link>
-      <Link href="/Config">
-        <a className={`${style.link} ${pathname == "/Config"? style.active : ''}`}>Nosotros</a>
+      <Link href="#nosotros">
+        <a className={`${style.link} ${pathname == "#nosotros"? style.active : ''}`}>Nosotros</a>
       </Link>
-      <Link href="/About">
-        <a className={`${style.link} ${pathname == "/About"? style.active : ''}`}>Contacto</a>
+      <Link href="#about">
+        <a className={`${style.link} ${pathname == "#about"? style.active : ''}`}>Contacto</a>
       </Link> 
     </nav>
   </header>

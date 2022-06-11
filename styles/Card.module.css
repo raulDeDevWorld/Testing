@@ -1,0 +1,14 @@
+.card {
+    border: 1px solid black;
+    border-radius: 1px;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    
+    transition: color 0.15s ease, border-color 0.15s ease;
+    max-width: 300px;
+  }
+.buttonsBox {
+    display: flex;
+}

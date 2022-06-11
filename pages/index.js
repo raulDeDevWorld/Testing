@@ -1,15 +1,59 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
+import Button from '../components/Button'
+import Card from '../components/Card'
 import style from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <div>
-      <Navbar/>
-      <div className={style.mainContainer}>
-      <Image src="/main-logo-dark.svg" alt="logo" width={456} height={156} />
-      </div>
+      <Navbar />
+      <section className={style.section} id="inicio">
+        <span className={style.logo}>
+          <Image src="/main-logo-dark.svg" alt="logo" width={456} height={156} />
+        </span>
+        <span className={style.portada}>
+          <Image src="/portada.svg" alt="logo" width={456} height={156} />
+        </span>
+        <div className={style.paragraphBox}>
+          <p>BIENVENIDO A SWOOU.COM</p>
+          <p>Desarrolla tus proyectos con nosotros</p>
+        </div>
+        
+        <div className={style.buttonsBox}>
+          <Button style={'buttonPrimary'}>Productos</Button>
+          <Button style={'buttonSecondary'}>Servicios</Button>
+        </div>
+      </section>
+
+      <section className={style.section} id="productos">
+        <h2>Prueba Los Productos SWOOU</h2>
+        <div className={style.cardBox}>
+          <Card img='/mathLogo.svg'>Aplicación web instalable con
+            funcionalidad offline que automatiza
+            el proceso de enseñanza-aprendizaje
+            de matemáticas, dirigida a profesores
+            y psicopedagogos que trabajan con
+            estudiantes de primaria.
+          </Card>
+          <Card img='/preuniversityLogo.svg'>Aplicación web instalable con
+            funcionalidad offline que automatiza
+            el proceso de enseñanza-aprendizaje
+            de matemáticas, dirigida a profesores
+            y psicopedagogos que trabajan con
+            estudiantes de primaria.
+          </Card>
+          <Card img='/qrLogo.svg'>Aplicación web instalable con
+            funcionalidad offline que automatiza
+            el proceso de enseñanza-aprendizaje
+            de matemáticas, dirigida a profesores
+            y psicopedagogos que trabajan con
+            estudiantes de primaria.
+          </Card>
+        </div>
+      </section>
+
 
 
 

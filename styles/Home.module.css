@@ -1,3 +1,54 @@
+
+.section {
+  position: relative;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-width: 360px;
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+
+.portada {
+  padding: 30px 0px 0px 0;
+}
+.paragraphBox {
+  text-align: center;
+}
+.buttonsBox :nth-child(n) {
+  margin: 15px 25px;
+  
+}
+
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 50px 0 0 0;
+  }
+  .cardBox {
+    display: flex;
+  }
+} 
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+
+
 .container {
   padding: 0 2rem;
 }
@@ -113,4 +164,4 @@
     width: 100%;
     flex-direction: column;
   }
-}
+} */
