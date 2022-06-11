@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import Button from '../components/Button'
@@ -61,7 +60,9 @@ export default function Home() {
         <h2>SWOOU servicios</h2>
         <div className={style.cardBox}>
           <Card img='/web.svg'>
-            <p className={style.paragraphLeft}><b>Detalles</b><br />
+            <h4>DISEÑO Y DESARROLLO WEB</h4>
+            <p className={style.paragraphLeft}>
+              <b>Detalles</b><br />
               Responsive y SPA<br />
               Optimizacion SEO<br />
               Arquitectura escalable<br />
@@ -70,27 +71,75 @@ export default function Home() {
               React, Vue, Angular, Next, Nuxt <i>(Frontend)</i> <br />
               Node, Express <i>(Backend)</i><br />
               Firebase, Amplify <i>(Backend as a service)</i> <br />
-              MongoDB <i>(Base de datos)</i></p>
-          
+              MongoDB <i>(Base de datos)</i>
+            </p>
           </Card>
           <Card img='/host.svg'>
-          <p>Aplicación web instalable con
-            funcionalidad offline que automatiza
-            el proceso de enseñanza-aprendizaje
-            de matemáticas, dirigida a profesores
-            y psicopedagogos que trabajan con
-            estudiantes de primaria.</p>
+            <h4>DOMINIOS Y HOSTINGS</h4>
+            <p className={style.paragraphLeft}>
+              <b>Dominios</b><br />
+              NameCheep<br />
+              Google Domain<br />
+              GoDaddy<br />
+              <b>Hostings</b><br />
+              AWS<br />
+              Firebase<br />
+              Heroku<br />
+              Vercel<br />
+              Netlify<br />
+              Hostinger<br />
+              Github<br />
+            </p>
           </Card>
           <Card img='/search.svg'>
-          <p>Aplicación web instalable con
-            funcionalidad offline que automatiza
-            el proceso de enseñanza-aprendizaje
-            de matemáticas, dirigida a profesores
-            y psicopedagogos que trabajan con
-            estudiantes de primaria.</p>
+            <h4>POSICIONAMIENTO SEO</h4>
+            <p className={style.paragraphLeft}>
+              <b>Navegadores</b><br />
+              Google<br />
+              Bing<br />
+              Yahoo<br />
+              <b>Soporte</b><br />
+              Indexacion<br />
+              Metadatos<br />
+              Palabras clave<br />
+              Google search console<br />
+              Web master tools<br />
+              Blogs<br />
+              Paginas web<br />
+            </p>
           </Card>
         </div>
       </section>
+
+      <section className={style.section} id="productos">
+        <h2>NOSOTROS</h2>
+        <div className={style.paragraphBox}>
+          <p>Swoou es una compañia de desarrollo
+            y distribucion de aplicaciones web y mobil</p>
+        </div>
+
+        <div className={style.cardBox}>
+          <Card img='/mathLogo.svg'>
+            <p>Project Manager y Desarrollador Web
+              especializado en el MERN stack.</p>
+          </Card>
+          <Card img='/preuniversityLogo.svg'>
+            <p>Swoou cuenta con una comunidad de mas de 100
+              teachers especializados en educación y
+              estimulacion a temprana edad en las areas
+              linguistica, matematica y logica de programación.
+
+              Contacta con un teacher cerca de tu zona ya..</p>
+          </Card>
+          <Card img='/qrLogo.svg'>
+            <p>Project Manager y Desarrollador Web
+              especializado en el MERN stack.</p>
+          </Card>
+        </div>
+      </section>
+      <footer className={style.footer}>
+
+      </footer>
 
 
 
