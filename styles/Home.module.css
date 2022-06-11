@@ -1,7 +1,7 @@
 
 .section {
   position: relative;
-  padding: 60px 0;
+  padding: 60px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,13 +20,15 @@
 }
 .buttonsBox :nth-child(n) {
   margin: 15px 25px;
-  
+}
+.paragraphLeft {
+  text-align: left;
 }
 
 
 @media (min-width: 1024px) {
   .section {
-    padding: 50px 0 0 0;
+    padding: 50px 15px 0px 0px;
   }
   .cardBox {
     display: flex;

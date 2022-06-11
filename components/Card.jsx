@@ -11,7 +11,7 @@ export default function Card (props) {
             <span >
                 <Image src={props.img} alt="logo" width={456} height={156} />
             </span>
-            <p>{props.children}</p>
+            {props.children}
             <div className={style.buttonsBox}>
                 <Button style={'buttonPrimary'}>Adquirir</Button>
                 <Button style={'buttonSecondary'}>Probar</Button>

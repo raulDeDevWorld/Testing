@@ -30,26 +30,64 @@ export default function Home() {
       <section className={style.section} id="productos">
         <h2>Prueba Los Productos SWOOU</h2>
         <div className={style.cardBox}>
-          <Card img='/mathLogo.svg'>Aplicación web instalable con
+          <Card img='/mathLogo.svg'>
+            <p>Aplicación web instalable con
             funcionalidad offline que automatiza
             el proceso de enseñanza-aprendizaje
             de matemáticas, dirigida a profesores
             y psicopedagogos que trabajan con
-            estudiantes de primaria.
+            estudiantes de primaria.</p>
           </Card>
-          <Card img='/preuniversityLogo.svg'>Aplicación web instalable con
+          <Card img='/preuniversityLogo.svg'>
+          <p>Aplicación web instalable con
             funcionalidad offline que automatiza
             el proceso de enseñanza-aprendizaje
             de matemáticas, dirigida a profesores
             y psicopedagogos que trabajan con
-            estudiantes de primaria.
+            estudiantes de primaria.</p>
           </Card>
-          <Card img='/qrLogo.svg'>Aplicación web instalable con
+          <Card img='/qrLogo.svg'>
+          <p>Aplicación web instalable con
             funcionalidad offline que automatiza
             el proceso de enseñanza-aprendizaje
             de matemáticas, dirigida a profesores
             y psicopedagogos que trabajan con
-            estudiantes de primaria.
+            estudiantes de primaria.</p>
+          </Card>
+        </div>
+      </section>
+
+      <section className={style.section} id="servicios">
+        <h2>SWOOU servicios</h2>
+        <div className={style.cardBox}>
+          <Card img='/web.svg'>
+            <p className={style.paragraphLeft}><b>Detalles</b><br />
+              Responsive y SPA<br />
+              Optimizacion SEO<br />
+              Arquitectura escalable<br />
+              <b>Tecnologias</b><br />
+              Figma <i>(Disaeño UI)</i> <br />
+              React, Vue, Angular, Next, Nuxt <i>(Frontend)</i> <br />
+              Node, Express <i>(Backend)</i><br />
+              Firebase, Amplify <i>(Backend as a service)</i> <br />
+              MongoDB <i>(Base de datos)</i></p>
+          
+          </Card>
+          <Card img='/host.svg'>
+          <p>Aplicación web instalable con
+            funcionalidad offline que automatiza
+            el proceso de enseñanza-aprendizaje
+            de matemáticas, dirigida a profesores
+            y psicopedagogos que trabajan con
+            estudiantes de primaria.</p>
+          </Card>
+          <Card img='/search.svg'>
+          <p>Aplicación web instalable con
+            funcionalidad offline que automatiza
+            el proceso de enseñanza-aprendizaje
+            de matemáticas, dirigida a profesores
+            y psicopedagogos que trabajan con
+            estudiantes de primaria.</p>
           </Card>
         </div>
       </section>
