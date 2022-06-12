@@ -45,7 +45,12 @@
     border-radius: 4px;
     background-color: white;
 }
-
+.transformOne {
+    transform: rotate(45deg) translateX(4px) translateY(4px);
+}
+.transformTwo {
+    transform: rotate(-45deg) translateX(5px) translateY(-4px);
+}
 .nav {
     position: fixed;
     top: 75px;

@@ -3,8 +3,10 @@ import Navbar from '../components/Navbar'
 import Button from '../components/Button'
 import Card from '../components/Card'
 import style from '../styles/Home.module.css'
+import { Router, useRouter } from 'next/router'
 
 export default function Home() {
+  const router = useRouter()
   return (
     <div>
       <Navbar />
@@ -21,8 +23,8 @@ export default function Home() {
         </div>
         
         <div className={style.buttonsBox}>
-          <Button style={'buttonPrimary'}>Productos</Button>
-          <Button style={'buttonSecondary'}>Servicios</Button>
+          <Button style={'buttonPrimary'} click={()=>router.push('#productos')}>Productos</Button>
+          <Button style={'buttonSecondary'} click={()=>router.push('#servicios')}>Servicios</Button>
         </div>
       </section>
 
@@ -111,7 +113,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={style.section} id="productos">
+      <section className={style.section} id="nosotros">
         <h2>NOSOTROS</h2>
         <div className={style.paragraphBox}>
           <p>Swoou es una compañia de desarrollo
@@ -119,26 +121,35 @@ export default function Home() {
         </div>
 
         <div className={style.cardBox}>
-          <Card img='/mathLogo.svg'>
-            <p>Project Manager y Desarrollador Web
-              especializado en el MERN stack.</p>
-          </Card>
-          <Card img='/preuniversityLogo.svg'>
-            <p>Swoou cuenta con una comunidad de mas de 100
-              teachers especializados en educación y
-              estimulacion a temprana edad en las areas
-              linguistica, matematica y logica de programación.
 
-              Contacta con un teacher cerca de tu zona ya..</p>
-          </Card>
-          <Card img='/qrLogo.svg'>
+      
+        <div className={style.cardProfile}>
+            <span className={style.imgRadius}>
+              <Image src="/rau.jpg" alt="logo" style={{ borderRadius: '200px' }} width="200" height="200" />
+            </span>
+            <h5>RAÚL CHOQUE ROMERO</h5>
             <p>Project Manager y Desarrollador Web
               especializado en el MERN stack.</p>
-          </Card>
+              <Button style={'buttonPrimary'}>Contactar</Button>
+        </div>
+        <div className={style.cardProfile}>
+            <span className={style.imgRadius}>
+              <Image src="/eri.jpg" alt="logo" style={{ borderRadius: '200px' }} width="200" height="200" />
+            </span>
+            <h5>HERVE ERIC CHOQUE ROMERO</h5>
+            <p>Project Manager y Desarrollador Web
+              especializado en el MERN stack.</p>
+              <Button style={'buttonPrimary'}>Contactar</Button>
+          </div>
         </div>
       </section>
-      <footer className={style.footer}>
-
+      <footer className={style.footer} id="contacto">
+        <p>
+          Celular: +591 73432289 <br />
+          Gmail: swoou.com@gmail.com <br />
+          Ubicacion: Sucre-bolivia
+        </p>
+        <span className={style.paragraphCenter}>© Copyright 2022 <br /> swoou.com</span> 
       </footer>
 
 

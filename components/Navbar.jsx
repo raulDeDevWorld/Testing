@@ -14,29 +14,29 @@ export default function Navbar () {
     <div className={style.navbar}>
         <img src="/main-logo-white.svg" className={style.logo} alt="logo" />
          <div className={style.menu} onClick={handleMenu}>
-            <span className={style.span}></span>
-            <span className={style.span}></span>
-            <span className={style.span}></span>
+            <span className={`${style.span} ${menu === true ? style.transformOne : ''}`}></span>
+            <span className={`${menu === false ? style.span : ''}`}></span>
+            <span className={`${style.span} ${menu === true ? style.transformTwo : ''}`}></span>
         </div>   
     </div>
     <nav className={`${style.nav} ${menu === true ? style.visible : ''}`}>
       <Link href="#inicio">
-        <a className={`${style.link} ${pathname == "#inicio" ? style.active : ''}`}>Inicio</a>
+        <a className={`${style.link} ${pathname == "#inicio" ? style.active : ''}`} onClick={()=>setMenu(!menu)}>Inicio</a>
       </Link>
       <Link href="#productos">
-        <a className={`${style.link} ${pathname == "#productos"? style.active : ''}`}>Productos</a>
+        <a className={`${style.link} ${pathname == "#productos"? style.active : ''}`} onClick={()=>setMenu(!menu)}>Productos</a>
       </Link>
       <Link href="#servicios">
-        <a className={`${style.link} ${pathname == "#servicios"? style.active : ''}`}>Servicios</a>
+        <a className={`${style.link} ${pathname == "#servicios"? style.active : ''}`} onClick={()=>setMenu(!menu)}>Servicios</a>
       </Link> 
       <Link href="#cursos">
-        <a className={`${style.link} ${pathname == "#cursos" ? style.active : ''}`}>Cursos</a>
+        <a className={`${style.link} ${pathname == "#cursos" ? style.active : ''}`} onClick={()=>setMenu(!menu)}>Cursos</a>
       </Link>
       <Link href="#nosotros">
-        <a className={`${style.link} ${pathname == "#nosotros"? style.active : ''}`}>Nosotros</a>
+        <a className={`${style.link} ${pathname == "#nosotros"? style.active : ''}`} onClick={()=>setMenu(!menu)}>Nosotros</a>
       </Link>
-      <Link href="#about">
-        <a className={`${style.link} ${pathname == "#about"? style.active : ''}`}>Contacto</a>
+      <Link href="#contacto">
+        <a className={`${style.link} ${pathname == "#contacto"? style.active : ''}`} onClick={()=>setMenu(!menu)}>Contacto</a>
       </Link> 
     </nav>
   </header>

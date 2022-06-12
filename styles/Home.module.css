@@ -24,7 +24,25 @@
 .paragraphLeft {
   text-align: left;
 }
-
+.cardProfile {
+  padding: 20px 10%;
+  text-align: center;
+}
+.imgRadius {
+  border-radius: 50px;
+  overflow: hidden;
+}
+.footer {
+  position: relative;
+  padding: 10px;
+  bottom: 0;
+  color: white;
+  background-color: #000000;
+}
+.paragraphCenter {
+  display: block;
+  text-align: center;
+}
 
 @media (min-width: 1024px) {
   .section {
