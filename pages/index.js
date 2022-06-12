@@ -146,7 +146,7 @@ export default function Home() {
       <footer className={style.footer} id="contacto">
       <span className={style.contact}>
           <Image src="/phone.svg" alt="logo" width={30} height={30} />
-          <span>+591 73432289</span>
+          <span>+591 73447725</span>
         </span><br />
         <span className={style.contact}>
           <Image src="/email.svg" alt="logo" width={30} height={30} />
