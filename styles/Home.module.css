@@ -43,7 +43,12 @@
   display: block;
   text-align: center;
 }
-
+.contact {
+  display: flex;
+}
+.contact :nth-child(n) {
+  margin: 15px 10px;
+}
 @media (min-width: 1024px) {
   .section {
     padding: 50px 15px 0px 0px;

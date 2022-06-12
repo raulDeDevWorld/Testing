@@ -29,9 +29,9 @@ export default function Navbar () {
       <Link href="#servicios">
         <a className={`${style.link} ${pathname == "#servicios"? style.active : ''}`} onClick={()=>setMenu(!menu)}>Servicios</a>
       </Link> 
-      <Link href="#cursos">
+      {/* <Link href="#cursos">
         <a className={`${style.link} ${pathname == "#cursos" ? style.active : ''}`} onClick={()=>setMenu(!menu)}>Cursos</a>
-      </Link>
+      </Link> */}
       <Link href="#nosotros">
         <a className={`${style.link} ${pathname == "#nosotros"? style.active : ''}`} onClick={()=>setMenu(!menu)}>Nosotros</a>
       </Link>
