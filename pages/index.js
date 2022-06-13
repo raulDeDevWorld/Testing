@@ -134,7 +134,7 @@ function whats () {
             <h5>RAÚL CHOQUE ROMERO</h5>
             <p>Project Manager y Desarrollador Web
               especializado en el MERN stack.</p>
-              <Button style={'buttonPrimary'}>Contactar</Button>
+              <Button style={'buttonPrimary'} click={whats}>Contactar</Button>
         </div>
         <div className={style.cardProfile}>
             <span className={style.imgRadius}>
@@ -143,15 +143,11 @@ function whats () {
             <h5>HERVE ERIC CHOQUE ROMERO</h5>
             <p>Project Manager y Desarrollador Web
               especializado en el MERN stack.</p>
-              <Button style={'buttonPrimary'}>Contactar</Button>
+              <Button style={'buttonPrimary'} click={whats}>Contactar</Button>
           </div>
         </div>
       </section>
       <span className={style.boxWhats}>
-        <span onClick={whats} className={style.msg} >Aplicaciones Web y Android Modernas<br />
-          Construye tus proyectos con nosotros
-          <span className={style.read}>22:00</span>
-        </span>
         <img onClick={whats} src="whatsapp.svg" className={style.whatsapp} alt="logo" />
       </span>
       <footer className={style.footer} id="contacto">
