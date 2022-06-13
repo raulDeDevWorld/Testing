@@ -7,6 +7,10 @@ import { Router, useRouter } from 'next/router'
 
 export default function Home() {
   const router = useRouter()
+function whats () { 
+    router.push(  "https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20"
+    )
+  }
   return (
     <div>
       <Navbar />
