@@ -4,7 +4,7 @@ import Button from '../components/Button'
 import Card from '../components/Card'
 import style from '../styles/Home.module.css'
 import { Router, useRouter } from 'next/router'
-
+ 
 export default function Home() {
   const router = useRouter()
 function whats () { 
