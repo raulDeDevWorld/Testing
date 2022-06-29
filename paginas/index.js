@@ -3,14 +3,6 @@ import Navbar from '../components/Navbar'
 import Button from '../components/Button'
 import Card from '../components/Card'
 import style from '../styles/Home.module.css'
-<<<<<<< HEAD
-import { useRouter } from 'next/router'
-
-export default function Home() {
-  const router = useRouter()
-  function click (link) { 
-    router.push(link)
-=======
 import { Router, useRouter } from 'next/router'
  
 export default function Home() {
@@ -18,7 +10,6 @@ export default function Home() {
 function whats () { 
     router.push(  "https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20"
     )
->>>>>>> 0f28234cd2a760c509773f8f40dad5fa158eab60
   }
   return (
     <div>
@@ -44,9 +35,7 @@ function whats () {
       <section className={style.section} id="productos">
         <h2>Prueba Los Productos SWOOU</h2>
         <div className={style.cardBox}>
-          <Card img='/mathLogo.svg' 
-                prove={()=>click('https://math.swoou.com/')} 
-                acquire={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}>
+          <Card img='/mathLogo.svg'>
             <p>Aplicación web instalable con
             funcionalidad offline que automatiza
             el proceso de enseñanza-aprendizaje
@@ -54,9 +43,7 @@ function whats () {
             y psicopedagogos que trabajan con
             estudiantes de primaria.</p>
           </Card>
-          <Card img='/preuniversityLogo.svg' 
-                prove={()=>click('https://preuniversity.swoou.com/')} 
-                acquire={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}>
+          <Card img='/preuniversityLogo.svg'>
           <p>Aplicación web instalable con
             funcionalidad offline que automatiza
             el proceso de enseñanza-aprendizaje
@@ -64,9 +51,7 @@ function whats () {
             y psicopedagogos que trabajan con
             estudiantes de primaria.</p>
           </Card>
-          <Card img='/qrLogo.svg' 
-                prove={()=>click('https://qr.swoou.com/')} 
-                acquire={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}>
+          <Card img='/qrLogo.svg'>
           <p>Aplicación web instalable con
             funcionalidad offline que automatiza
             el proceso de enseñanza-aprendizaje
@@ -149,11 +134,7 @@ function whats () {
             <h5>RAÚL CHOQUE ROMERO</h5>
             <p>Project Manager y Desarrollador Web
               especializado en el MERN stack.</p>
-<<<<<<< HEAD
-              <Button style={'buttonPrimary'} click={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}>Contactar</Button>
-=======
               <Button style={'buttonPrimary'} click={whats}>Contactar</Button>
->>>>>>> 0f28234cd2a760c509773f8f40dad5fa158eab60
         </div>
         <div className={style.cardProfile}>
             <span className={style.imgRadius}>
@@ -162,20 +143,12 @@ function whats () {
             <h5>HERVE ERIC CHOQUE ROMERO</h5>
             <p>Project Manager y Desarrollador Web
               especializado en el MERN stack.</p>
-<<<<<<< HEAD
-              <Button style={'buttonPrimary'} click={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}>Contactar</Button>
-=======
               <Button style={'buttonPrimary'} click={whats}>Contactar</Button>
->>>>>>> 0f28234cd2a760c509773f8f40dad5fa158eab60
           </div>
         </div>
       </section>
       <span className={style.boxWhats}>
-<<<<<<< HEAD
-        <img onClick={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')} src="whatsapp.svg" className={style.whatsapp} alt="logo" />
-=======
         <img onClick={whats} src="whatsapp.svg" className={style.whatsapp} alt="logo" />
->>>>>>> 0f28234cd2a760c509773f8f40dad5fa158eab60
       </span>
       <footer className={style.footer} id="contacto">
       <span className={style.contact}>
@@ -184,7 +157,7 @@ function whats () {
         </span><br />
         <span className={style.contact}>
           <Image src="/email.svg" alt="logo" width={30} height={30} />
-          <span>swoou.com@gmail.com</span>
+          <span>Gmail: swoou.com@gmail.com</span>
         </span><br />
         <span className={style.contact}>
           <Image src="/location.svg" alt="logo" width={30} height={30} />
