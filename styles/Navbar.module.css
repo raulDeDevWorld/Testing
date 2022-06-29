@@ -56,8 +56,7 @@
     top: 75px;
     right: -100vw;
     width: 100%;
-    font-weight: 100;
-    bottom: 0;
+    min-height: 100vh;
     padding: 10px 0 0 10px;
     display: flex;
     flex-direction: column;
@@ -130,6 +129,7 @@
         top: 22px;
         right: 10px;
         bottom: auto;
+        min-height: auto;
         width: 270px;
         min-width: 525px;
         max-width: auto;
