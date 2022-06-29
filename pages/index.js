@@ -3,22 +3,12 @@ import Navbar from '../components/Navbar'
 import Button from '../components/Button'
 import Card from '../components/Card'
 import style from '../styles/Home.module.css'
-<<<<<<< HEAD
 import { useRouter } from 'next/router'
 
 export default function Home() {
   const router = useRouter()
   function click (link) { 
     router.push(link)
-=======
-import { Router, useRouter } from 'next/router'
- 
-export default function Home() {
-  const router = useRouter()
-function whats () { 
-    router.push(  "https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20"
-    )
->>>>>>> 0f28234cd2a760c509773f8f40dad5fa158eab60
   }
   return (
     <div>
@@ -149,11 +139,7 @@ function whats () {
             <h5>RAÚL CHOQUE ROMERO</h5>
             <p>Project Manager y Desarrollador Web
               especializado en el MERN stack.</p>
-<<<<<<< HEAD
               <Button style={'buttonPrimary'} click={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}>Contactar</Button>
-=======
-              <Button style={'buttonPrimary'} click={whats}>Contactar</Button>
->>>>>>> 0f28234cd2a760c509773f8f40dad5fa158eab60
         </div>
         <div className={style.cardProfile}>
             <span className={style.imgRadius}>
@@ -162,20 +148,13 @@ function whats () {
             <h5>HERVE ERIC CHOQUE ROMERO</h5>
             <p>Project Manager y Desarrollador Web
               especializado en el MERN stack.</p>
-<<<<<<< HEAD
               <Button style={'buttonPrimary'} click={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}>Contactar</Button>
-=======
-              <Button style={'buttonPrimary'} click={whats}>Contactar</Button>
->>>>>>> 0f28234cd2a760c509773f8f40dad5fa158eab60
+
           </div>
         </div>
       </section>
       <span className={style.boxWhats}>
-<<<<<<< HEAD
         <img onClick={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')} src="whatsapp.svg" className={style.whatsapp} alt="logo" />
-=======
-        <img onClick={whats} src="whatsapp.svg" className={style.whatsapp} alt="logo" />
->>>>>>> 0f28234cd2a760c509773f8f40dad5fa158eab60
       </span>
       <footer className={style.footer} id="contacto">
       <span className={style.contact}>
