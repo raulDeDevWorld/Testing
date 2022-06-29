@@ -36,7 +36,9 @@ export default function Home() {
         <div className={style.cardBox}>
           <Card img='/mathLogo.svg' 
                 prove={()=>click('https://math.swoou.com/')} 
-                acquire={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}>
+                acquire={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}
+                textButtonOne={'Adquirir'}
+                textButtonTwo={'Probar'}>
             <p>Aplicación web instalable con
             funcionalidad offline que automatiza
             el proceso de enseñanza-aprendizaje
@@ -46,7 +48,9 @@ export default function Home() {
           </Card>
           <Card img='/preuniversityLogo.svg' 
                 prove={()=>click('https://preuniversity.swoou.com/')} 
-                acquire={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}>
+                acquire={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}
+                textButtonOne={'Adquirir'}
+                textButtonTwo={'Probar'}>
           <p>Aplicación web instalable con
             funcionalidad offline que automatiza
             el proceso de enseñanza-aprendizaje
@@ -56,7 +60,9 @@ export default function Home() {
           </Card>
           <Card img='/qrLogo.svg' 
                 prove={()=>click('https://qr.swoou.com/')} 
-                acquire={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}>
+                acquire={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}
+                textButtonOne={'Adquirir'}
+                textButtonTwo={'Probar'}>
           <p>Aplicación web instalable con
             funcionalidad offline que automatiza
             el proceso de enseñanza-aprendizaje
@@ -70,7 +76,11 @@ export default function Home() {
       <section className={style.section} id="servicios">
         <h2>SWOOU servicios</h2>
         <div className={style.cardBox}>
-          <Card img='/web.svg'>
+          <Card img='/web.svg'
+                prove={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')} 
+                acquire={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}
+                textButtonOne={'Cotizar'}
+                textButtonTwo={'Consultar'}>
             <h4>DISEÑO Y DESARROLLO WEB</h4>
             <p className={style.paragraphLeft}>
               <b>Detalles</b><br />
@@ -85,7 +95,11 @@ export default function Home() {
               MongoDB <i>(Base de datos)</i>
             </p>
           </Card>
-          <Card img='/host.svg'>
+          <Card img='/host.svg'
+                prove={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')} 
+                acquire={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}
+                textButtonOne={'Cotizar'}
+                textButtonTwo={'Consultar'}>
             <h4>DOMINIOS Y HOSTINGS</h4>
             <p className={style.paragraphLeft}>
               <b>Dominios</b><br />
@@ -102,7 +116,11 @@ export default function Home() {
               Github<br />
             </p>
           </Card>
-          <Card img='/search.svg'>
+          <Card img='/search.svg'
+                prove={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')} 
+                acquire={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}
+                textButtonOne={'Cotizar'}
+                textButtonTwo={'Consultar'}>
             <h4>POSICIONAMIENTO SEO</h4>
             <p className={style.paragraphLeft}>
               <b>Navegadores</b><br />

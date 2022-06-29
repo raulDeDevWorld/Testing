@@ -13,8 +13,8 @@ export default function Card (props) {
             </span>
             {props.children}
             <div className={style.buttonsBoxCard}>
-                <Button style={'buttonPrimary'} click={props.acquire}>Adquirir</Button>
-                <Button style={'buttonSecondary'} click={props.prove}>Probar</Button>
+                <Button style={'buttonPrimary'} click={props.acquire}>{props.textButtonOne}</Button>
+                <Button style={'buttonSecondary'} click={props.prove}>{props.textButtonTwo}</Button>
             </div>
         </div>
 
