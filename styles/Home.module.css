@@ -32,6 +32,74 @@
   border-radius: 50px;
   overflow: hidden;
 }
+.boxWhats {
+  pointer-events: none;
+  position: fixed;
+  bottom: 25px;
+  width: 100vw;
+  height: 50px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+  z-index: 1000;
+}
+.msg {
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 290px;
+  height: 60px;
+  background-image: url('/msg.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  padding: 8px;
+  font-size: 12px;
+  z-index: 1000;
+  animation-name: animation;
+  animation-duration: 10s;
+  z-index: 1000;
+
+}
+
+.read {
+  box-sizing: border-box;
+  position: absolute;
+  right: 63px;
+  display: flex;
+  justify-content: space-between;
+  width: 45px;
+  height: 16px;
+  bottom: 5px;
+  background-image: url('/read.svg');
+  background-repeat: no-repeat;
+  background-position:  100% 40%;
+  background-size: 14px;
+  color: #A8A8A8;
+  font-size: 12px;
+  z-index: 10000;
+  animation-name: animation;
+  animation-duration: 10s;
+}
+@keyframes animation {
+  0%  {  width: 0px; height: 0px; color: transparent;  background-image: none;}
+  95%  {  width: 0px; height: 0px; color: transparent; background-image: none}
+  100% {  width: 290pxpx;  height: 60px;}
+}
+
+.whatsapp {
+  pointer-events: fill;
+  cursor: pointer;
+
+  position: relative;
+  bottom: 0px;
+  right: 15px;
+
+  width: 60px;
+  z-index: 10000;
+
+}
 .footer {
   position: relative;
   padding: 10px;

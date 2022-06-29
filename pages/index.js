@@ -3,10 +3,13 @@ import Navbar from '../components/Navbar'
 import Button from '../components/Button'
 import Card from '../components/Card'
 import style from '../styles/Home.module.css'
-import { Router, useRouter } from 'next/router'
+import { useRouter } from 'next/router'
 
 export default function Home() {
   const router = useRouter()
+  function click (link) { 
+    router.push(link)
+  }
   return (
     <div>
       <Navbar />
@@ -31,7 +34,9 @@ export default function Home() {
       <section className={style.section} id="productos">
         <h2>Prueba Los Productos SWOOU</h2>
         <div className={style.cardBox}>
-          <Card img='/mathLogo.svg'>
+          <Card img='/mathLogo.svg' 
+                prove={()=>click('https://math.swoou.com/')} 
+                acquire={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}>
             <p>Aplicación web instalable con
             funcionalidad offline que automatiza
             el proceso de enseñanza-aprendizaje
@@ -39,7 +44,9 @@ export default function Home() {
             y psicopedagogos que trabajan con
             estudiantes de primaria.</p>
           </Card>
-          <Card img='/preuniversityLogo.svg'>
+          <Card img='/preuniversityLogo.svg' 
+                prove={()=>click('https://preuniversity.swoou.com/')} 
+                acquire={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}>
           <p>Aplicación web instalable con
             funcionalidad offline que automatiza
             el proceso de enseñanza-aprendizaje
@@ -47,7 +54,9 @@ export default function Home() {
             y psicopedagogos que trabajan con
             estudiantes de primaria.</p>
           </Card>
-          <Card img='/qrLogo.svg'>
+          <Card img='/qrLogo.svg' 
+                prove={()=>click('https://qr.swoou.com/')} 
+                acquire={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}>
           <p>Aplicación web instalable con
             funcionalidad offline que automatiza
             el proceso de enseñanza-aprendizaje
@@ -130,7 +139,7 @@ export default function Home() {
             <h5>RAÚL CHOQUE ROMERO</h5>
             <p>Project Manager y Desarrollador Web
               especializado en el MERN stack.</p>
-              <Button style={'buttonPrimary'}>Contactar</Button>
+              <Button style={'buttonPrimary'} click={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}>Contactar</Button>
         </div>
         <div className={style.cardProfile}>
             <span className={style.imgRadius}>
@@ -139,10 +148,13 @@ export default function Home() {
             <h5>HERVE ERIC CHOQUE ROMERO</h5>
             <p>Project Manager y Desarrollador Web
               especializado en el MERN stack.</p>
-              <Button style={'buttonPrimary'}>Contactar</Button>
+              <Button style={'buttonPrimary'} click={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}>Contactar</Button>
           </div>
         </div>
       </section>
+      <span className={style.boxWhats}>
+        <img onClick={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')} src="whatsapp.svg" className={style.whatsapp} alt="logo" />
+      </span>
       <footer className={style.footer} id="contacto">
       <span className={style.contact}>
           <Image src="/phone.svg" alt="logo" width={30} height={30} />
@@ -150,7 +162,7 @@ export default function Home() {
         </span><br />
         <span className={style.contact}>
           <Image src="/email.svg" alt="logo" width={30} height={30} />
-          <span>Gmail: swoou.com@gmail.com</span>
+          <span>swoou.com@gmail.com</span>
         </span><br />
         <span className={style.contact}>
           <Image src="/location.svg" alt="logo" width={30} height={30} />

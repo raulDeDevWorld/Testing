@@ -12,9 +12,9 @@ export default function Card (props) {
                 <Image src={props.img} alt="logo" width={456} height={156} />
             </span>
             {props.children}
-            <div className={style.buttonsBox}>
-                <Button style={'buttonPrimary'}>Adquirir</Button>
-                <Button style={'buttonSecondary'}>Probar</Button>
+            <div className={style.buttonsBoxCard}>
+                <Button style={'buttonPrimary'} click={props.acquire}>Adquirir</Button>
+                <Button style={'buttonSecondary'} click={props.prove}>Probar</Button>
             </div>
         </div>
 
