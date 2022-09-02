@@ -149,8 +149,6 @@ export default function Home() {
         </div>
 
         <div className={style.cardBox}>
-
-      
         <div className={style.cardProfile}>
             <span className={style.imgRadius}>
               <Image src="/rau.jpg" alt="Raúl Choque Romero" style={{ borderRadius: '200px' }} width="200" height="200" />
