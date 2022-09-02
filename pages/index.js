@@ -86,13 +86,13 @@ export default function Home() {
               <b>Detalles</b><br />
               Responsive y SPA<br />
               Optimizacion SEO<br />
-              Arquitectura escalable<br />
+              Arquitectura escalable<br />  
               <b>Tecnologias</b><br />
               Figma <i>(Disaeño UI)</i> <br />
               React, Vue, Angular, Next, Nuxt <i>(Frontend)</i> <br />
               Node, Express <i>(Backend)</i><br />
               Firebase, Amplify <i>(Backend as a service)</i> <br />
-              MongoDB <i>(Base de datos)</i>
+              MongoDB <i>(Base de datos)</i> <br /> <br />
             </p>
           </Card>
           <Card img='/host.svg'
@@ -144,7 +144,8 @@ export default function Home() {
         <h2>NOSOTROS</h2>
         <div className={style.paragraphBox}>
           <p>Swoou es una compañia de desarrollo
-            y distribucion de aplicaciones web y mobil</p>
+            y distribucion de aplicaciones web y mobil.</p>
+            <p>Trabaja con nosotros como DEV o afiliado de distribucion de apps.</p>
         </div>
 
         <div className={style.cardBox}>
@@ -152,23 +153,13 @@ export default function Home() {
       
         <div className={style.cardProfile}>
             <span className={style.imgRadius}>
-              <Image src="/rau.jpg" alt="logo" style={{ borderRadius: '200px' }} width="200" height="200" />
+              <Image src="/rau.jpg" alt="Raúl Choque Romero" style={{ borderRadius: '200px' }} width="200" height="200" />
             </span>
             <h5>RAÚL CHOQUE ROMERO</h5>
             <p>Project Manager y Desarrollador Web
               especializado en el MERN stack.</p>
               <Button style={'buttonPrimary'} click={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}>Contactar</Button>
         </div>
-        <div className={style.cardProfile}>
-            <span className={style.imgRadius}>
-              <Image src="/eri.jpg" alt="logo" style={{ borderRadius: '200px' }} width="200" height="200" />
-            </span>
-            <h5>HERVE ERIC CHOQUE ROMERO</h5>
-            <p>Project Manager y Desarrollador Web
-              especializado en el MERN stack.</p>
-              <Button style={'buttonPrimary'} click={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}>Contactar</Button>
-
-          </div>
         </div>
       </section>
       <span className={style.boxWhats}>
