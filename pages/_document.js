@@ -23,7 +23,7 @@ export default class MyDocument extends Document {
                                       crear una pagina web,
                                       comprar pagina web" />
                     <meta name="author" content="Raul Choque Romero, web and app developer, fundador de swoou.com" />
-
+                    <meta name="google-site-verification" content="K_yVKmtfQpT9lX6xKf-qIz0LoyKwcYOEHeOTxi_ksXA" />
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
                 <body>
