@@ -47,7 +47,7 @@ export default function Home() {
             estudiantes de primaria.</p>
           </Card>
           <Card img='/preuniversityLogo.svg' 
-                prove={()=>click('https://preuniversity.swoou.com/')} 
+                prove={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20quisiera%20probar%20Swoou%20Preuniversity...%20')} 
                 acquire={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}
                 textButtonOne={'Adquirir'}
                 textButtonTwo={'Probar'}>
@@ -59,7 +59,7 @@ export default function Home() {
             estudiantes de primaria.</p>
           </Card>
           <Card img='/qrLogo.svg' 
-                prove={()=>click('https://qr.swoou.com/')} 
+                prove={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20quisiera%20probar%20Swoou%20QR%20para%20mi%20negocio...%20')} 
                 acquire={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}
                 textButtonOne={'Adquirir'}
                 textButtonTwo={'Probar'}>
