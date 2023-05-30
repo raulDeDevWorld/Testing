@@ -35,7 +35,7 @@ export default function Home() {
         <h2>Prueba Los Productos SWOOU</h2>
         <div className={style.cardBox}>
           <Card img='/mathLogo.svg' 
-                prove={()=>click('https://math.swoou.com/')} 
+                prove={()=>click('https://swoou-math.vercel.app/')} 
                 acquire={()=>click('https://api.whatsapp.com/send?phone=+59173447725&text=Hola%20Mundo!!%20')}
                 textButtonOne={'Adquirir'}
                 textButtonTwo={'Probar'}>
